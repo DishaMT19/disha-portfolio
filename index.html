@@ -1075,7 +1075,28 @@
                 opacity: 0;
             }
         }
-        
+        .project-image {
+        width: 100%;
+        height: 180px;
+        overflow: hidden;
+        border-radius: 10px;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .project-content {
+            flex: 1;
+        }
+                
         /* Responsive Styles */
         @media (max-width: 992px) {
             .hero {
@@ -1194,6 +1215,34 @@
                     <p>Completed Research Methodology and IPR online course</p>
                     <a href="Research Methodologies and IPR.pdf" target="_blank">View Certificate</a>
                 </div>
+
+                <div class="certificate-item">
+                <i class="fas fa-certificate certificate-icon" style="font-size: 2rem; color: var(--primary); margin-bottom: 10px;"></i>
+                <h4>Cybersecurity Course</h4>
+                <p>Skill India – Tech Mahindra Foundation</p>
+                <a href="certificates/cybersecurity.pdf" target="_blank">View Certificate</a>
+            </div>
+
+            <div class="certificate-item">
+                <i class="fas fa-certificate certificate-icon" style="font-size: 2rem; color: var(--primary); margin-bottom: 10px;"></i>
+                <h4>Cloud Computing</h4>
+                <p>VTU Online Education Course</p>
+                <a href="certificates/cloud.pdf" target="_blank">View Certificate</a>
+            </div>
+
+            <div class="certificate-item">
+                <i class="fas fa-certificate certificate-icon" style="font-size: 2rem; color: var(--primary); margin-bottom: 10px;"></i>
+                <h4>Solutions Architecture Simulation</h4>
+                <p>Forage Virtual Experience</p>
+                <a href="certificates/architecture.pdf" target="_blank">View Certificate</a>
+            </div>
+
+            <div class="certificate-item">
+                <i class="fas fa-certificate certificate-icon" style="font-size: 2rem; color: var(--primary); margin-bottom: 10px;"></i>
+                <h4>Data Analytics Simulation</h4>
+                <p>Deloitte Forage Program</p>
+                <a href="certificates/data-analytics.pdf" target="_blank">View Certificate</a>
+            </div>
             </div>
         </div>
     </div>
@@ -1497,10 +1546,92 @@
                             <a href="https://github.com/DishaMT19/Advanced-Calculator"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
+
+                     
                 </div>
+
+                <div class="project-card animate">
+                    <div class="project-img">
+                        <img src="palette-project.png" alt="GMM Palette Project">
+                    </div>
+                    <div class="project-content">
+                        <h3>GMM Palette Extractor</h3>
+                        <p>Color palette extractor using Gaussian Mixture Model (GMM). Upload an image to detect dominant colors using Machine Learning, PCA, and clustering algorithm with Flask backend.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>Machine Learning</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/DishaMT19/ML-Fraud-Detection-GMM.git">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card animate">
+                    <div class="project-image">
+                        <img src="summarizer.png" alt="Text Summarization Project">
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Text Summarization Tool</h3>
+                        <p>NLP based text summarization system using TF-IDF, BERT, and SpaCy. Supports PDF, text files, and Wikipedia URLs with Flask web interface for automatic summary generation.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>NLP</span>
+                            <span>BERT</span>
+                            <span>Machine Learning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/DishaMT19/AI-Text-Summarization.git">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card animate">
+                    <div class="project-image">
+                        <img src="fintrack.png" alt="FinTrack Expense Tracker">
+                    </div>
+                    <div class="project-content">
+                        <h3>FinTrack Expense Tracker</h3>
+                        <p>Smart expense tracker built with JavaScript, LocalStorage, and Chart.js. Includes budget tracking, filters, progress bar, expense editing, and interactive charts with responsive UI.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Chart.js</span>
+                            <span>LocalStorage</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/DishaMT19/fintrack-expense-tracker.git">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
             </div>
+
+
          <div style="text-align: center; margin-top: 40px;">
-                <a href="Disha_M.T _Resume.pdf" class="btn"><i class="fas fa-download"></i> Download Resume</a>
+                <a href="DISHA_MT_RESUME.pdf" class="btn"><i class="fas fa-download"></i> Download Resume</a>
                 <!-- <a href="certificate_20251562679920.pdf" class="btn btn-outline"><i class="fas fa-certificate"></i> View Certificates</a>
                                             <button id="certificateBtn" class="btn ripple">View Certificates</button> -->
                 <div class="contact-text">
@@ -1605,9 +1736,11 @@
                     </div>
                     <button type="submit" class="btn ripple">Send Message</button>
                 </form>
-                </div>
+</div>
 
-               <script>
+
+
+ <script>
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById('contactForm');
     if (!form) return; // Safety check
